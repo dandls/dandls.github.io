@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name</title>
-  <meta name="description" content="Your Name — PhD candidate researching [your field] at [University].">
+  <title>Susanne Dandl</title>
+  <meta name="description" content="Susanne Dandl — Postdoctoral researcher in biostatistics at the University of Zurich, working on causal effect estimation, survival analysis, and interpretable machine learning.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
@@ -111,6 +111,12 @@
     .project p { margin-bottom: 8px; }
     .project-links { display: flex; gap: 16px; font-size: 0.88rem; font-weight: 500; }
 
+    /* Simple lists (talks, teaching) */
+    .plain-list { margin: 0; padding: 0; list-style: none; }
+    .plain-list li { padding: 8px 0; }
+    .plain-list li + li { border-top: 1px solid var(--rule); }
+    .plain-list .meta { display: block; margin: 0; }
+
     footer {
       color: var(--muted);
       font-size: 0.82rem;
@@ -131,14 +137,15 @@
 
   <header>
     <!-- Put a square photo named photo.jpg in the repo next to this file -->
-    <img class="avatar" src="photo.jpg" alt="Photo of Your Name">
+    <img class="avatar" src="photo.jpg" alt="Photo of Susanne Dandl">
     <div>
-      <h1>Your Name</h1>
-      <p class="role">PhD Candidate, Department of [Field]<br>[University Name]</p>
+      <h1>Susanne Dandl</h1>
+      <p class="role">Postdoctoral Researcher, Epidemiology, Biostatistics and Prevention Institute<br>University of Zurich</p>
       <ul class="links">
-        <li><a href="mailto:you@university.edu">Email</a></li>
-        <li><a href="https://scholar.google.com/">Google Scholar</a></li>
-        <li><a href="https://github.com/yourusername">GitHub</a></li>
+        <li><a href="mailto:dandl.susanne@gmail.com">Email</a></li>
+        <li><a href="https://scholar.google.de/citations?user=pwoXLlsAAAAJ">Google Scholar</a></li>
+        <li><a href="https://github.com/dandls/">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/susanne-dandl">LinkedIn</a></li>
         <li><a href="cv.pdf">CV</a></li>
       </ul>
     </div>
@@ -147,60 +154,46 @@
   <section id="about">
     <h2>About</h2>
     <p>
-      I'm a [year]-year PhD candidate at [University], advised by
-      <a href="#">Prof. Advisor Name</a>. My research focuses on
-      [one-sentence description of the big question you work on].
+      I'm a postdoctoral researcher at the University of Zurich in the group of
+      <a href="mailto:torsten.hothorn@uzh.ch">Prof. Torsten Hothorn</a>. My research
+      combines statistical methodology and machine learning to draw reliable,
+      interpretable conclusions from complex biomedical data. I focus on who benefits
+      from a treatment and how to estimate such effects transparently.
     </p>
     <p>
-      Before my PhD, I [previous degree, job, or experience]. I'm especially
-      interested in [what draws you to this work, or what you're exploring next].
+      I received my PhD in Statistics from LMU Munich (summa cum laude), supervised by
+      Prof. Bernd Bischl. Afterwards, I served as interim professor in the Elite Graduate
+      Program in Data Science at LMU. My work spans heterogeneous treatment effect
+      estimation, survival analysis, interpretable and fair machine learning, and
+      open-source research software in R.
     </p>
     <ul class="interests" aria-label="Research interests">
-      <li>Interest one</li>
-      <li>Interest two</li>
-      <li>Interest three</li>
-      <li>Interest four</li>
+      <li>Causal inference</li>
+      <li>Heterogeneous treatment effects</li>
+      <li>Survival analysis</li>
+      <li>Transformation models</li>
+      <li>Interpretable machine learning</li>
+      <li>Algorithmic fairness</li>
     </ul>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+  <section id="research">
+    <h2>Selected Research</h2>
 
     <article class="project">
-      <h3>Project Title One</h3>
-      <p class="meta">2025 – present · with Collaborator A, Collaborator B</p>
-      <p>Two or three sentences on the question, the approach, and what you found or built.</p>
+      <h3>Nonparanormal Adjusted Marginal Inference</h3>
+      <p class="meta">2026 · <em>Biometrics</em> (discussion paper) · with Torsten Hothorn</p>
+      <p>A fully interpretable framework based on transformation models for estimating
+        marginal treatment effects. It offers a transparent alternative to black-box
+        estimators for a broad range of outcome types.</p>
       <div class="project-links">
-        <a href="#">Paper</a>
-        <a href="#">Code</a>
-        <a href="#">Slides</a>
+        <a href="https://doi.org/10.1093/biomtc/ujag065">Paper</a>
       </div>
     </article>
 
     <article class="project">
-      <h3>Project Title Two</h3>
-      <p class="meta">2024 · Published at [Venue]</p>
-      <p>A short description of the project and why it matters.</p>
-      <div class="project-links">
-        <a href="#">Paper</a>
-        <a href="#">Code</a>
-      </div>
-    </article>
-
-    <article class="project">
-      <h3>Project Title Three</h3>
-      <p class="meta">2023</p>
-      <p>A short description of the project and why it matters.</p>
-      <div class="project-links">
-        <a href="#">Project page</a>
-      </div>
-    </article>
-  </section>
-
-  <footer>
-    © 2026 Your Name · Last updated October 2026
-  </footer>
-
-</main>
-</body>
-</html>
+      <h3>Heterogeneous Treatment Effect Estimation with Model-Based Forests</h3>
+      <p class="meta">2024 · <em>Statistical Methods in Medical Research</em> · with Andreas Bender, Torsten Hothorn</p>
+      <p>Combines transformation models with random forests into a unified,
+        likelihood-based framework. It estimates heterogeneous treatment effects
+        from observational data under confounding,
